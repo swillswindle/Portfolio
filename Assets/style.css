@@ -1,0 +1,204 @@
+* {
+  background-color: aquamarine;
+  color: darkblue;
+  font-family: sans-serif;
+  font-size: 1vh;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 10vh;
+  background-color: burlywood;
+  align-items: center;
+  padding: 1%;
+  border-bottom: 2px solid darkblue;
+}
+
+nav {
+  background-color: burlywood;
+}
+header h1 {
+  background-color: burlywood;
+  font-size: 200%;
+}
+#links {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+
+  list-style: none;
+  margin: 0;
+  column-gap: 4%;
+  background-color: burlywood;
+}
+#links li a {
+  background-color: burlywood;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  height: 2vh;
+  background-color: burlywood;
+  line-height: 2vh;
+  border-top: 2px solid darkblue;
+}
+
+footer h1 {
+  background-color: burlywood;
+}
+
+main {
+  display: flex;
+}
+
+.image {
+  height: 20vh;
+  width: 35vw;
+}
+
+.pic {
+  height: 40vh;
+  width: 70vw;
+}
+
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15vw;
+  padding-right: 9vw;
+  margin-right: 1vw;
+  border-right: 1px darkblue solid;
+  padding: 1%;
+  
+}
+
+#sidebar h3 {
+  font-size: 150%;
+  white-space: nowrap;
+  justify-content: left;
+  row-gap: 36.2vh;
+}
+
+#contact {
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10vw;
+  padding: 1%;
+  overflow-x: hidden;
+  flex-wrap: nowrap;
+}
+.about {
+}
+.work {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: 1fr, 1fr, 1fr;
+  grid-template-areas:
+    'rps rps'
+    'chip grad'
+    'hack matrix';
+  column-gap: 0px;
+  row-gap: 0px;
+  justify-content: center;
+}
+
+.work h4 {
+  white-space: nowrap;
+  color: darkblue;
+  font-size: 20px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  overflow-wrap: break-all;
+  font-size: 1.2em;
+}
+
+.work p {
+  white-space: nowrap;
+  color: darkblue;
+  font-size: 20px;
+  position: relative;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  font-size: 1em;
+}
+
+#contact-info {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#rps {
+  position: relative;
+  grid-area: rps;
+  margin-bottom: -5px;
+  padding: 0;
+}
+
+#chip {
+  position: relative;
+  grid-area: chip;
+  margin-bottom: -5px;
+  padding: 0;
+}
+
+#graduation {
+  position: relative;
+  grid-area: grad;
+  margin-bottom: -5px;
+  padding: 0;
+}
+
+#hack {
+  position: relative;
+  grid-area: hack;
+  margin: 0;
+  padding: 0;
+}
+
+#matrix {
+  position: relative;
+  grid-area: matrix;
+  margin: 0;
+  padding: 0;
+}
+img {
+  border-radius: 8px;
+  border: 3px solid white;
+  transition: all 0.5s ease-in-out;
+}
+img:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.cards:hover .overlay {
+  height: 33%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  z-index: 1;
+  transition: 0.5s ease;
+}
